@@ -40,7 +40,7 @@ module.exports = {
 };
 ```
 
-<h2 align="center">Options</h2>
+<h2 align="center">Settings</h2>
 
 Available settings:
 
