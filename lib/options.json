@@ -1,0 +1,30 @@
+{
+    "type": "object",
+    "properties": {
+        "depNames": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+                "type": "string"
+            }
+        },
+        "options": {
+            "type": "object",
+            "properties": {
+                "showToast": {
+                    "type": "boolean"
+                },
+                "showConsole": {
+                    "type": "boolean"
+                },
+                "devServerOnly": {
+                    "type": "boolean"
+                },
+                "disableCertValid": {
+                    "type": "boolean"
+                }
+            }
+        }
+    },
+    "additionalProperties": false
+}
