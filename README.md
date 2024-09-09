@@ -5,10 +5,10 @@
   </a>
 
   <h1>Version Checker Webpack Plugin</h1>
-  <p>Плагин проверки версий зависимостей.</p>
+  <p>Dependency Version Checker Plugin.</p>
 </div>
 
-<h2 align="center">Установка</h2>
+<h2 align="center">Install</h2>
 
 <h3>Webpack 5</h3>
 
@@ -19,9 +19,9 @@
 ```bash
   yarn add --dev version-checker-webpack-plugin
 ```
-<h2 align="center">Использование</h2>
+<h2 align="center">Use</h2>
 
-Плагин выведет предупреждения в консоль и в уведомления Windows или MacOS, для этого необходимо добавить его как указано ниже:
+The plugin will output warnings to the console and to Windows or MacOS notifications, for this you need to add it as indicated below:
 
 **webpack.config.js**
 
@@ -40,13 +40,13 @@ module.exports = {
 };
 ```
 
-<h2 align="center">Настройки</h2>
+<h2 align="center">Options</h2>
 
-Доступные настройки:
+Available settings:
 
 |              Name               |                         Type                         |                        Default                        | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | :-----------------------------: | :--------------------------------------------------: | :---------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|          **`depNames`**         |                      `{Array.<string>}`              |                          ['']                         | Имена проверяемых пакетов                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-|      **`options.showToast`**    |                         `{Boolean}`                  |                          true                         | Оповещения ОС                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-|     **`options.showConsole`**   |                         `{Boolean}`                  |                          true                         | Оповещения в консоль                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| **`options.devServerOnly`** |                         `{Boolean}`                  |                          true                         | Только для DevServer                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+|          **`depNames`**         |                      `{Array.<string>}`              |                          ['']                         | Names of packages to be checked                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+|      **`options.showToast`**    |                         `{Boolean}`                  |                          true                         | Toast of Windows or MacOC                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+|     **`options.showConsole`**   |                         `{Boolean}`                  |                          true                         | Toast of console                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| **`options.devServerOnly`** |                         `{Boolean}`                  |                          true                         | For DevServer only                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
