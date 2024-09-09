@@ -17,7 +17,7 @@
 ```
 
 ```bash
-  yarn add --dev packages-version-checker-webpack-plugin
+  yarn add --dev version-checker-webpack-plugin
 ```
 <h2 align="center">Использование</h2>
 
@@ -26,7 +26,7 @@
 **webpack.config.js**
 
 ```js
-const VersionCheckerPlugin = require("packages-version-checker-webpack-plugin");
+const VersionCheckerPlugin = require("version-checker-webpack-plugin");
 
 module.exports = {
   entry: "index.js",
