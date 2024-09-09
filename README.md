@@ -13,11 +13,11 @@
 <h3>Webpack 5</h3>
 
 ```bash
-  npm i --save-dev @cloudx/packages-version-checker-webpack-plugin
+  npm i --save-dev version-checker-webpack-plugin
 ```
 
 ```bash
-  yarn add --dev @cloudx/packages-version-checker-webpack-plugin
+  yarn add --dev packages-version-checker-webpack-plugin
 ```
 <h2 align="center">Использование</h2>
 
@@ -26,7 +26,7 @@
 **webpack.config.js**
 
 ```js
-const VersionCheckerPlugin = require("@cloudx/packages-version-checker-webpack-plugin");
+const VersionCheckerPlugin = require("packages-version-checker-webpack-plugin");
 
 module.exports = {
   entry: "index.js",
@@ -35,7 +35,7 @@ module.exports = {
     filename: "index_bundle.js",
   },
   plugins: [new VersionCheckerPlugin({
-    depNames: ['@cloudx/packages-version-checker-webpack-plugin']
+    depNames: ['version-checker-webpack-plugin']
   })],
 };
 ```
