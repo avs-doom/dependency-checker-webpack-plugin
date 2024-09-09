@@ -4,8 +4,8 @@
       src="https://webpack.js.org/assets/icon-square-big.svg">
   </a>
 
-  <h1>Version Checker Webpack Plugin</h1>
-  <p>Dependency Version Checker Plugin.</p>
+  <h1>Dependency Checker Webpack Plugin</h1>
+  <p>Plugin that simplifies checke of dependensies version and notify at new versions.</p>
 </div>
 
 <h2 align="center">Install</h2>
@@ -13,20 +13,20 @@
 <h3>Webpack 5</h3>
 
 ```bash
-  npm i --save-dev version-checker-webpack-plugin
+  npm i --save-dev dependency-checker-webpack-plugin
 ```
 
 ```bash
-  yarn add --dev version-checker-webpack-plugin
+  yarn add --dev dependency-checker-webpack-plugin
 ```
 <h2 align="center">Use</h2>
 
-The plugin will output warnings to the console and to Windows or MacOS notifications, for this you need to add it as indicated below:
+The plugin will output info in console and to Windows or MacOS notifications, for this you need to add it as indicated below:
 
 **webpack.config.js**
 
 ```js
-const VersionCheckerPlugin = require("version-checker-webpack-plugin");
+const DependencyCheckerPlugin = require("dependency-checker-webpack-plugin");
 
 module.exports = {
   entry: "index.js",
@@ -34,8 +34,8 @@ module.exports = {
     path: __dirname + "/dist",
     filename: "index_bundle.js",
   },
-  plugins: [new VersionCheckerPlugin({
-    depNames: ['version-checker-webpack-plugin']
+  plugins: [new DependencyCheckerPlugin({
+    depNames: ['dependency-checker-webpack-plugin']
   })],
 };
 ```
