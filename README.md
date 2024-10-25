@@ -21,7 +21,7 @@
 ```
 <h2 align="center">Use</h2>
 
-The plugin will output info in console and to Windows or MacOS notifications, for this you need to add it as indicated below:
+The plugin will output info in console and to Windows, MacOS or Linux toast, for this you need to add it as indicated below:
 
 **webpack.config.js**
 
