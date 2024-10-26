@@ -1,7 +1,7 @@
 import { Compiler } from "webpack";
 export = DependencyCheckerWebpackPlugin;
 
-declare class DependencyChecker {
+declare class DependencyCheckerWebpackPlugin {
     constructor(options?: DependencyCheckerWebpackPlugin.Options);
 
     apply(compiler: Compiler): void;
