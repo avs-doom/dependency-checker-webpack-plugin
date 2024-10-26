@@ -1,14 +1,14 @@
 import { Compiler } from "webpack";
-export = VersionCheckerPlugin;
+export = DependencyCheckerWebpackPlugin;
 
-declare class VersionCheckerPlugin {
-    constructor(options?: VersionCheckerPlugin.Options);
+declare class DependencyChecker {
+    constructor(options?: DependencyCheckerWebpackPlugin.Options);
 
     apply(compiler: Compiler): void;
 
     private messages: string[];
-    private depNames: VersionCheckerPlugin.Options['depNames'];
-    private options: VersionCheckerPlugin.Options['options'];
+    private depNames: DependencyCheckerWebpackPlugin.Options['depNames'];
+    private options: DependencyCheckerWebpackPlugin.Options['options'];
 
     static checkVersion(
         name: string
@@ -18,7 +18,7 @@ declare class VersionCheckerPlugin {
     static showConsole(): void;
 }
 
-declare namespace VersionCheckerPlugin {
+declare namespace DependencyCheckerWebpackPlugin {
     interface Options {
         depNames: string[];
         options?: {

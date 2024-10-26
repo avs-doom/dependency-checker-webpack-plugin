@@ -1,7 +1,7 @@
 {
   "name": "dependency-checker-webpack-plugin",
   "version": "1.0.5",
-  "description": "Dependency Version Checker Webpack Plugin",
+  "description": "Dependency Checker Webpack Plugin",
   "main": "./lib/index.js",
   "types": "./lib/typings.d.ts",
   "scripts": {
