@@ -10,7 +10,7 @@ declare class VersionCheckerPlugin {
     private depNames: VersionCheckerPlugin.Options['depNames'];
     private options: VersionCheckerPlugin.Options['options'];
 
-    static checkVersion(
+    static async checkVersion(
         name: string
     ): Promise<void>;
 
