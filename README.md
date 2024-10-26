@@ -37,16 +37,23 @@ module.exports = {
 };
 ```
 It will create a notification for dependencies that have new versions.
-<center><img src='./demo.png' alt="Demo" /></center>
+<div align="center">
+  <img src='./demo.png' alt="Demo" />
+</div>
 
-<h2 align="center">Settings</h2>
+<h2 align="center">Options</h2>
 
-Available settings:
+```js
+new DependencyCheckerPlugin({
+  depNames: array,
+  options?: object
+})
+```
 
-|              Name               |                         Type                         |                        Default                        | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| :-----------------------------: | :--------------------------------------------------: | :---------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|          **`depNames`**         |                      <nobr>`{Array.<string>}`</nobr>              |                          ['']                         | Names of packages to be checked                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-|      **`options.showToast`**    |                         `{Boolean}`                  |                          true                         | Enable toast of Windows, MacOS or Linux                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-|     **`options.showConsole`**   |                         `{Boolean}`                  |                          true                         | Enable notify of console                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| **`options.devServerOnly`** |                         `{Boolean}`                  |                          true                         | For DevServer only                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| **`options.disableCertValid`** |                         `{Boolean}`                  |                          false                         | NODE_TLS_REJECT_UNAUTHORIZED = 0 or 1                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+|Name|Type|Default|Description
+|:--:|:--:|:--:|:----------|
+|**`depNames`**|`{Array.<string>}`|['']|Names of packages to be checked|
+|**`options.showToast`**|`{Boolean}`|true|Enable toast of Windows, MacOS or Linux|
+|**`options.showConsole`**|`{Boolean}`|true|Enable notify in console|
+|**`options.devServerOnly`**|`{Boolean}`|true|For DevServer only|
+|**`options.disableCertValid`**|`{Boolean}`|false|NODE_TLS_REJECT_UNAUTHORIZED = 0 or 1|
