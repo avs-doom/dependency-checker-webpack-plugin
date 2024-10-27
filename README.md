@@ -4,6 +4,11 @@
       src="https://webpack.js.org/assets/icon-square-big.svg">
   </a>
 
+  [![npm][npm]][npm-url]
+  [![node][node]][node-url]
+  ![npm](https://img.shields.io/npm/dw/dependency-checker-webpack-plugin.svg)
+  [![size][size]][size-url]
+
   <h1>Dependency Checker Webpack Plugin</h1>
   <p>Plugin that simplifies checke of dependensies version and notify at new versions.</p>
 </div>
@@ -41,7 +46,7 @@ It will create a notification for dependencies that have new versions.
   <img src='./demo.png' alt="Demo" />
 </div>
 
-<h2 align="center">Options</h2>
+<h2 align="center">Settings</h2>
 
 ```js
 new DependencyCheckerPlugin({
@@ -57,3 +62,10 @@ new DependencyCheckerPlugin({
 |**`options.showConsole`**|`{Boolean}`|true|Enable notify in console|
 |**`options.devServerOnly`**|`{Boolean}`|true|For DevServer only|
 |**`options.disableCertValid`**|`{Boolean}`|false|NODE_TLS_REJECT_UNAUTHORIZED = 0 or 1|
+
+[npm]: https://img.shields.io/npm/v/dependency-checker-webpack-plugin.svg
+[npm-url]: https://npmjs.com/package/dependency-checker-webpack-plugin
+[node]: https://img.shields.io/node/v/dependency-checker-webpack-plugin.svg
+[node-url]: https://nodejs.org
+[size]: https://packagephobia.now.sh/badge?p=dependency-checker-webpack-plugin
+[size-url]: https://packagephobia.now.sh/result?p=dependency-checker-webpack-plugin
