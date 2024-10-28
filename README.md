@@ -10,7 +10,7 @@
   [![size][size]][size-url]
 
   <h1>Dependency Checker Webpack Plugin</h1>
-  <p>Plugin that simplifies checke of dependensies version and notify at new versions.</p>
+  <p>Plugin that simplifies checke of dependensies version and notify about new version.</p>
 </div>
 
 <h2 align="center">Install</h2>
